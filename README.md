@@ -12,7 +12,10 @@ The CMakeLists.txt assumes you have Ceres and Eigen installed in your system. Yo
 
 ## The principle of the calibration
 
-1. For acc biases, a cost function is defined as ![](norm-error.png) or as ![](squared-norm-error.png) and solved by ceres solver to get gravity norm and 3 axis acc biases.
+1. For acc biases, a cost function is defined as 
+![](norm-error.png) or as 
+![](squared-norm-error.png) 
+and solved by ceres solver to get gravity norm and 3 axis acc biases.
 
 2. Gyr biases is just average of all static gyr interval means.
 
