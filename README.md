@@ -8,13 +8,20 @@ A c++ project to calibrate the 6 axis biases of an imu sensor, and local gravity
 - Eigen
 - imu tk (https://github.com/Kyle-ak/imu_tk)
 
-The CMakeLists.txt assumes you have Ceres and Eigen installed in your system. You can also modify it to link to external built libs. The imu tk package is slightly modified and included as a third-party folder, and is only used for static data range detection and extraction.
+The CMakeLists.txt assumes you have Ceres and Eigen installed in your system. You can also modify it to link to external built libs. 
+
+The imu tk package is slightly modified and included as a third-party folder, and is only used for static data range detection and extraction.
 
 ## The principle of the calibration
 
 1. For acc biases, a cost function is defined as 
-![](norm-error.png) or as 
+
+![](readme-pictures/norm-error.png) 
+
+or as 
+
 ![](squared-norm-error.png) 
+
 and solved by ceres solver to get gravity norm and 3 axis acc biases.
 
 2. Gyr biases is just average of all static gyr interval means.
