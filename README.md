@@ -1,3 +1,3 @@
 # imu-bias-gravity-calibrator
 
-![](imu data.png)
+![ ](imu-data.png)
