@@ -44,3 +44,4 @@ The program will create a "static_detect_visual.csv" file to indicate the static
 3. Check the ceres report
 
 Check the convergence and final cost in the ceres report to make sure nothing is wrong with the optimization.
+
