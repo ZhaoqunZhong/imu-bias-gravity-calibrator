@@ -20,7 +20,7 @@ The imu tk package is slightly modified and included as a third-party folder, an
 
 or as 
 
-![](squared-norm-error.png) 
+![](readme-pictures/squared-norm-error.png) 
 
 and solved by ceres solver to get gravity norm and 3 axis acc biases.
 
@@ -48,8 +48,9 @@ The correct gravity magnitude should be around 9.8, otherwise the 6 biases you g
 
 The program will create a "static_detect_visual.csv" file to indicate the static data intervals it extracts from your input "imu.csv" file. By visualizing these two files, you can validate the correctness of the static intervals detection and extraction. Below are two plots from Matlab as an example:
 
-![imu.csv](imu-data.png)
-![static_detect_visual.csv](imu-data-with-static-intervals.png)
+![imu.csv](readme-pictures/imu-data.png)
+
+![static_detect_visual.csv](readme-pictures/imu-data-with-static-intervals.png)
 
 3. Check the ceres report
 
